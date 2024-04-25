@@ -22,7 +22,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.cabin",
-				"match": "\\b(if|constant|variable|function|group|unique|table|new|return|reference)\\b"
+				"match": "\\b(if|constant|variable|function|group|unique|new|return|reference|take|copy|and|or|not|is)\\b"
 			}]
 		},
 		"strings": {
