@@ -1,0 +1,25 @@
+{
+  "name": "vscode-cabin",
+  "displayName": "vscode-cabin",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "cabin",
+      "aliases": ["Cabin", "cabin"],
+      "extensions": [".cbn"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "cabin",
+      "scopeName": "source.cabin",
+      "path": "./syntaxes/cabin.tmLanguage.json"
+    }]
+  }
+}

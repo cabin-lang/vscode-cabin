@@ -1,0 +1,59 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Cabin",
+	"patterns": [
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#classes"
+		},
+		{
+			"include": "#variables"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.cabin",
+				"match": "\\b(if|constant|variable|function|group|unique|table|new|return|reference)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.cabin",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.cabin",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"patterns": [{
+				"name": "comment",
+				"match": "//[^\r\n]*"
+			}]
+		},
+		"classes": {
+			"patterns": [{
+				"name": "entity.name.type",
+				"match": "\\b[A-Z]\\w*"
+			}]
+		},
+		"variables": {
+			"patterns": [{
+				"name": "variable.name",
+				"match": "\\b\\w+\\b"
+			}]
+		}
+	},
+	"scopeName": "source.cabin"
+}
