@@ -15,6 +15,9 @@
 			"include": "#classes"
 		},
 		{
+			"include": "#functions"
+		},
+		{
 			"include": "#variables"
 		}
 	],
@@ -22,8 +25,20 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.cabin",
-				"match": "\\b(if|constant|variable|function|group|unique|new|return|reference|take|copy|and|or|not|is)\\b"
+				"match": "\\b(if|variable|function|group|unique|new|return|reference|take|copy|and|or|not|is|run|represent|as)\\b"
 			}]
+		},
+		"functions": {
+			"patterns": [
+				{
+					"match": "\\b(\\w+)\\s*\\(",
+					"captures": {
+						"1": {
+							"name": "entity.name.function"
+						}
+					}
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.cabin",
