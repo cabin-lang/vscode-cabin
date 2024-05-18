@@ -9,6 +9,9 @@
 			"include": "#comments"
 		},
 		{
+			"include": "#numbers"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
@@ -25,7 +28,13 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.cabin",
-				"match": "\\b(if|variable|function|group|unique|new|return|reference|take|copy|and|or|not|is|run|represent|as)\\b"
+				"match": "\\b(either|if|its|let|function|group|new|otherwise|return|run|)\\b"
+			}]
+		},
+		"numbers": {
+			"patterns": [{
+				"name": "constant.numeric",
+				"match": "\\b-?\\d+(\\.\\d+)?\\b"
 			}]
 		},
 		"functions": {
