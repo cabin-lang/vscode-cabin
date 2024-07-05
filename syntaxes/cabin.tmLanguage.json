@@ -28,7 +28,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.cabin",
-				"match": "\\b(either|if|its|let|function|group|new|otherwise|return|run)\\b"
+				"match": "\\b(action|and|either|foreach|if|in|is|it|let|group|new|or|otherwise|return|run|while)\\b"
 			}]
 		},
 		"numbers": {

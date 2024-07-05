@@ -13,7 +13,7 @@
     "languages": [{
       "id": "cabin",
       "aliases": ["Cabin", "cabin"],
-      "extensions": [".cbn"],
+      "extensions": [".cbn", ".cabin"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
