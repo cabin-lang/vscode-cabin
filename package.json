@@ -1,25 +1,29 @@
 {
-  "name": "vscode-cabin",
-  "displayName": "vscode-cabin",
-  "description": "",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.88.0"
-  },
-  "categories": [
-    "Programming Languages"
-  ],
-  "contributes": {
-    "languages": [{
-      "id": "cabin",
-      "aliases": ["Cabin", "cabin"],
-      "extensions": [".cbn", ".cabin"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "cabin",
-      "scopeName": "source.cabin",
-      "path": "./syntaxes/cabin.tmLanguage.json"
-    }]
-  }
+	"name": "vscode-cabin",
+	"displayName": "Cabin",
+	"description": "Cabin language support for Visual Studio Code.",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.88.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "cabin",
+			"aliases": ["Cabin", "cabin"],
+			"extensions": [".cabin"],
+			"configuration": "./language-configuration.json",
+			"icon": {
+				"dark": "./assets/icon_light.png",
+				"light": "./assets/icon.png"
+			}
+		}],
+			"grammars": [{
+			"language": "cabin",
+			"scopeName": "source.cabin",
+			"path": "./syntaxes/cabin.tmLanguage.json"
+		}]
+	}
 }

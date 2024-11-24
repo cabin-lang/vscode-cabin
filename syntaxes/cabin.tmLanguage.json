@@ -28,7 +28,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.cabin",
-				"match": "\\b(action|and|either|foreach|if|in|is|it|let|group|new|or|otherwise|return|run|while)\\b"
+				"match": "\\b(action|and|as|default|either|foreach|if|in|is|let|group|new|oneof|or|otherwise|represent|run)\\b"
 			}]
 		},
 		"numbers": {
@@ -40,7 +40,7 @@
 		"functions": {
 			"patterns": [
 				{
-					"match": "\\b(\\w+)\\s*\\(",
+					"match": "\\b(\\w+)[\\(\\<]",
 					"captures": {
 						"1": {
 							"name": "entity.name.function"
