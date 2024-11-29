@@ -63,7 +63,7 @@
 		"comments": {
 			"patterns": [{
 				"name": "comment",
-				"match": "//[^\r\n]*"
+				"match": "#($|[^\\[])[^\r\n]*"
 			}]
 		},
 		"classes": {
